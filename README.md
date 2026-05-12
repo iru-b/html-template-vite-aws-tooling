@@ -8,7 +8,7 @@ It is designed as a starting point for building static or SPA-style web applicat
 
 # 🧱 Tech Stack
 
-- Frontend build tool: :contentReference[oaicite:0]{index=0}  
+- Frontend build tool: Vite
 - Package manager: pnpm  
 - Code quality: Biome (lint + format)  
 - Infrastructure: AWS CDK  
