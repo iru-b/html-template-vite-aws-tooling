@@ -1,6 +1,8 @@
-# Digital Business Card
+# HTML Template
 
-This repository contains the web representation of the founder **Ingo Ruck** and the associated professional network.
+This repository provides a **production-ready HTML frontend template** together with **infrastructure as code for AWS deployment**.
+
+It is designed as a starting point for building static or SPA-style web applications using a modern frontend toolchain.
 
 ---
 
