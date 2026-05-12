@@ -1,0 +1,11 @@
+/* 1. Override variables FIRST */
+$primary: #00bcd4;
+$border-radius: 0.75rem;
+
+/* 2. Import Bootstrap */
+@import "bootstrap/scss/bootstrap";
+
+/* 3. Custom styles */
+body {
+  font-family: system-ui, sans-serif;
+}

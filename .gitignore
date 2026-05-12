@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+app/node_modules/
+infra/node_modules/
+app/.pnpm-store/
+infra/.pnpm-store/
+app/.pnpm/
+infra/.pnpm/
+
+# Vite / build output
+app/dist/
+
+# Logs
+app/pnpm-debug.log*
+infra/pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vite cache
+app/.vite/
+
+# Editor directories
+.idea/
+
+# Optional: TypeScript build info
+app/*.tsbuildinfo
+
+infra/cdk.out/
+infra/dist/
