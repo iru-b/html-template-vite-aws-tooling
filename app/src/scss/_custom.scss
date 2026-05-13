@@ -1,0 +1,72 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+/* =========================
+   Layout system
+========================== */
+
+.page-container {
+  width: 100%;
+  max-width: map-get($container-max-widths, xxl); // Bootstrap 5 max container
+  margin-inline: auto;
+}
+
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: $zindex-sticky;
+  background-color: $body-bg;
+  min-height: 72px;
+}
+
+.logo-link {
+    text-decoration: none;
+    font-weight: normal !important;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header shadow separator */
+.header-shadow {
+  box-shadow: $box-shadow-sm;
+}
+
+/* Nav link */
+.nav-link-btn {
+  padding: $spacer * 0.75 $spacer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+
+  &.active {
+    font-weight: $font-weight-semibold;
+    text-decoration: underline;
+  }
+}
+
+/* Mobile nav */
+.mobile-nav {
+  display: none;
+
+  &.open {
+    display: block;
+  }
+}
+
+/* CTA card */
+.cta-box {
+  position: sticky;
+  top: 90px;
+}
+
+/* Responsive styles */
+@include media-breakpoint-up(md) {
+  .highlight-item {
+    min-height: 135px;
+  }
+}

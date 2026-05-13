@@ -1,20 +1,99 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ingo Ruck - Staff Web Engineer</title>
-</head>
+    <title>HTML Template - Vite, aws, tooling</title>
 
-<body>
-    <div class="container py-5">
-        <h1 class="text-primary">Hello Bootstrap + Vite - with professional tooling</h1>
-        <p>Please check the README.md for more details</p>
-        <button class="btn btn-primary" type="button">Primary button</button>
-    </div>
+    <meta
+      name="description"
+      content="Minimal HTML template built with modern web standards, Bootstrap 5, and high-performance static hosting."
+    />
 
+    <link rel="canonical" href="https://example.com" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HTML Template" />
+    <meta
+      property="og:description"
+      content="Modern, fast, accessible HTML template."
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="theme-color" content="#0d6efd" />
+
+  </head>
+
+  <body>
+    <!-- Skip link -->
+    <a class="visually-hidden-focusable" href="#main">
+      Skip to main content
+    </a>
+
+    <!-- ===================== HEADER ===================== -->
+    <!-- @include src/partials/header.html -->
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main" class="page-container px-3 py-5">
+      <div class="row g-4">
+
+        <!-- LEFT COLUMN -->
+        <div class="col-12 col-lg-8">
+
+          <section class="mb-5">
+            <h2>About</h2>
+            <p>
+              This template is built for modern static websites with strong focus
+              on performance, accessibility and maintainability.
+            </p>
+          </section>
+
+          <section class="mb-5">
+            <h2>Highlights</h2>
+
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="p-3 border rounded highlight-item">
+                  <h3 class="h6">Performance</h3>
+                  <p class="mb-0">Optimized for fast loading and static hosting.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="p-3 border rounded highlight-item">
+                  <h3 class="h6">SEO Friendly</h3>
+                  <p class="mb-0">Semantic HTML and structured metadata included.</p>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="p-3 border rounded highlight-item">
+                  <h3 class="h6">Accessible</h3>
+                  <p class="mb-0">Built with WCAG-aware structure and ARIA support.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2>Contact</h2>
+            <p>
+              Email:
+              <a href="mailto:i.ruck.b@gmail.com">i.ruck.b@gmail.com</a>
+            </p>
+          </section>
+        </div>
+
+        <!-- RIGHT COLUMN (CTA) -->
+        <!-- @include src/partials/aside.html -->
+      </div>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <!-- @include src/partials/footer.html -->
+
+    <!-- JS -->
     <script type="module" src="/src/js/main.js"></script>
-</body>
-
+  </body>
 </html>
