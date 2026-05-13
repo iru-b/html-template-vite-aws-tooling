@@ -10,6 +10,7 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
+        next: resolve(__dirname, "next.html"),
         notFound: resolve(__dirname, "404.html"),
       },
     },

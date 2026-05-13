@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML Template - Vite, aws, tooling</title>
+
+    <meta
+      name="description"
+      content="Minimal HTML template built with modern web standards, Bootstrap 5, and high-performance static hosting."
+    />
+
+    <link rel="canonical" href="https://example.com" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HTML Template" />
+    <meta
+      property="og:description"
+      content="Modern, fast, accessible HTML template."
+    />
+    <meta property="og:type" content="website" />
+
+    <meta name="theme-color" content="#0d6efd" />
+
+  </head>
+
+  <body>
+    <!-- Skip link -->
+    <a class="visually-hidden-focusable" href="#main">
+      Skip to main content
+    </a>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="header-shadow">
+      <div class="page-container px-3 py-3">
+        <div class="d-flex justify-content-between align-items-center">
+
+          <!-- Logo -->
+          <div class="d-flex align-items-center gap-2">
+            <img src="/public/images/logo.svg" alt="HTML Template" width="40" />
+            <div class="fw-bold">HTML Template</div>
+          </div>
+
+          <!-- Desktop Nav -->
+          <nav aria-label="Primary navigation">
+            <ul class="nav d-none d-md-flex gap-2">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-btn" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link nav-link-btn active"
+                        href="/next.html"
+                        aria-current="page"
+                    >
+                        What's next?
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+          <!-- Mobile Hamburger -->
+          <button
+            class="btn btn-outline-primary d-md-none"
+            aria-label="Open menu"
+            onclick="document.getElementById('mobileNav').classList.toggle('open')"
+            type="button"
+          >
+            ☰
+          </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav id="mobileNav" class="mobile-nav mt-3 d-md-none" aria-label="Mobile navigation">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-btn" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-btn active" href="/next.html" aria-current="page">What's next?</a>
+                </li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main" class="page-container px-3 py-5">
+      <div class="row g-4">
+
+        <!-- LEFT COLUMN -->
+        <div class="col-12 col-lg-8">
+
+            <article aria-labelledby="next-steps-title">
+                <header class="mb-4">
+                    <h1 id="next-steps-title" class="mb-3">Next steps</h1>
+                    <p class="text-muted mb-0">
+                        When using this template, it is important to define your application architecture early
+                        to ensure scalability, maintainability, and long-term quality.
+                    </p>
+                </header>
+
+                <section aria-labelledby="architecture-title" class="mb-4">
+                    <h2 id="architecture-title" class="h5">Application architecture considerations</h2>
+
+                    <p>
+                        A well-structured foundation will help you avoid technical debt and improve collaboration
+                        across teams. The following areas should be defined early in your project lifecycle:
+                    </p>
+
+                    <ul class="list-unstyled d-grid gap-3">
+                        <li class="d-flex align-items-start gap-3">
+                            <span class="badge bg-light text-dark border mt-1">1</span>
+                            <span>Framework choice (if any)</span>
+                        </li>
+
+                        <li class="d-flex align-items-start gap-3">
+                            <span class="badge bg-light text-dark border mt-1">2</span>
+                            <span>Folder structure conventions</span>
+                        </li>
+
+                        <li class="d-flex align-items-start gap-3">
+                            <span class="badge bg-light text-dark border mt-1">3</span>
+                            <span>Runtime configuration strategy</span>
+                        </li>
+
+                        <li class="d-flex align-items-start gap-3">
+                            <span class="badge bg-light text-dark border mt-1">4</span>
+                            <span>Testing and quality gates</span>
+                        </li>
+
+                        <li class="d-flex align-items-start gap-3">
+                            <span class="badge bg-light text-dark border mt-1">5</span>
+                            <span>Deployment environments (staging / production)</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="why-it-matters-title" class="mb-4">
+                    <h2 id="why-it-matters-title" class="h5">Why this matters</h2>
+
+                    <p>
+                        Early architectural decisions reduce complexity later in development and make your
+                        application easier to scale, test, and maintain. This is especially important in
+                        long-lived projects where multiple contributors are involved.
+                    </p>
+                </section>
+
+                <footer class="mt-5">
+                    <p class="text-muted mb-0">
+                        Updated guidance for modern web applications built with accessibility and performance in mind.
+                    </p>
+                </footer>
+            </article>
+        </div>
+
+        <!-- RIGHT COLUMN (CTA) -->
+        <aside class="col-12 col-lg-4">
+          <div class="cta-box p-4 border rounded bg-light">
+
+            <h2 class="h5">About the creator</h2>
+            <p>
+                This minimal, high-quality HTML starter template was created by a web engineer 
+                with over 20 years of experience, who began working with early browsers such as Internet Explorer 5.0 
+                and continues to learn and refine his craft every day. 
+            </p>
+
+            <a
+              href="mailto:i.ruck.b@gmail.com"
+              class="btn btn-primary w-100"
+              style="min-height: 44px;"
+            >
+              Schedule a tech talk
+            </a>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="border-top">
+      <div class="page-container px-3 py-4">
+        <p class="mb-0 text-muted">
+          © 2026 HTML Template by Ingo Ruck
+        </p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
