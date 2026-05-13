@@ -21,6 +21,11 @@ header {
   min-height: 72px;
 }
 
+.logo-link {
+    text-decoration: none;
+    font-weight: normal !important;
+}
+
 main {
   position: relative;
   z-index: 1;
