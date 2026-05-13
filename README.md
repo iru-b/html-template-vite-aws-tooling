@@ -192,7 +192,7 @@ pnpm run prepare
 
 ### 2. Setup infrastructure
 
-Follow the instructions in the **Infrastructure Setup** section above to deply the infrastructure and configure GitHub Secrets.
+Follow the instructions in the **Infrastructure Setup** section above to deploy the infrastructure and configure GitHub Secrets.
 
 ---
 
