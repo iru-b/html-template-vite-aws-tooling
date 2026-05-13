@@ -113,7 +113,7 @@ pnpm run deploy
 
 ---
 
-## 4. Configure GitHub Secrets
+## 🔐 4. Configure GitHub Secrets
 
 Add the following secrets to your GitHub repository:
 
@@ -127,7 +127,7 @@ Add the following secrets to your GitHub repository:
 
 ---
 
-## 5. Destroy infrastructure (only if needed)
+## 🧨 5. Destroy infrastructure (only if needed)
 
 If you need to fully reset the infrastructure:
 
@@ -149,7 +149,7 @@ pnpm run destroy
 
 ---
 
-## 6. CI / CD
+## 🔄 6. CI / CD
 
 ### CI (Continuous Integration)
 
@@ -177,7 +177,7 @@ CD ensures that only validated and production-ready changes are deployed.
 
 ---
 
-## 7. Getting Started
+## 🚀 7. Getting Started
 
 ### 1. Setup root-level tooling
 
@@ -204,4 +204,4 @@ pnpm install
 pnpm run dev
 ```
 
-The Vite development server will start locally.
+The Vite development server will start locally. 🌐
