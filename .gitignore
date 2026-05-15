@@ -10,6 +10,9 @@ infra/.pnpm/
 # Vite / build output
 app/dist/
 
+# lighthouse ci output
+app/.lighthouseci/
+
 # Logs
 app/pnpm-debug.log*
 infra/pnpm-debug.log*

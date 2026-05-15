@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://html-template.iru-b.dev/sitemap.xml

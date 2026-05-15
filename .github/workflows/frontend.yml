@@ -49,6 +49,9 @@ jobs:
       - name: Build Vite app
         run: pnpm build
 
+      - name: Lighthouse check
+        run: pnpm run lighthouse
+
       - name: Upload Vite artifact
         uses: actions/upload-artifact@v7
         with:

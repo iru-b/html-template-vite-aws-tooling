@@ -11,7 +11,8 @@
     "lint": "biome lint .",
     "format": "biome format . --write",
     "check": "biome check .",
-    "check:ci": "biome check ."
+    "check:ci": "biome check .",
+    "lighthouse": "lhci autorun"
   },
   "engines": {
     "node": ">=26",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.15",
+    "@lhci/cli": "^0.15.1",
     "lint-staged": "^17.0.4",
     "rollup-plugin-visualizer": "^7.0.1",
     "sass": "^1.99.0",
